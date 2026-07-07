@@ -262,7 +262,7 @@ h3 {
 
 .hero-panel img {
   width: 100%;
-  height: 455px;
+  height: 500px;
   object-fit: cover;
   object-position: center 18%;
 }
@@ -350,7 +350,7 @@ h3 {
 
 .project-gallery {
   position: relative;
-  min-height: 540px;
+  min-height: 610px;
 }
 
 .gallery-main,
@@ -361,8 +361,8 @@ h3 {
 }
 
 .gallery-main {
-  width: 92%;
-  height: 410px;
+  width: 96%;
+  height: 470px;
   object-fit: cover;
   object-position: left top;
   box-shadow: var(--shadow);
@@ -372,8 +372,8 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 72%;
-  height: 350px;
+  width: 78%;
+  height: 390px;
   object-fit: cover;
   object-position: center top;
   border: 10px solid rgba(255, 255, 255, 0.72);
@@ -475,7 +475,7 @@ h3 {
 
 .project-screen img {
   width: 100%;
-  max-height: 520px;
+  max-height: 610px;
   object-fit: cover;
   object-position: center top;
   border: 1px solid var(--line);
@@ -487,11 +487,11 @@ h3 {
 }
 
 .project-reverse .project-screen img:first-child {
-  max-height: 360px;
+  max-height: 420px;
 }
 
 .project-reverse .project-screen img:last-child {
-  max-height: 330px;
+  max-height: 390px;
 }
 
 .approach {
@@ -561,7 +561,7 @@ h3 {
 
 .community-card img {
   width: 100%;
-  height: 340px;
+  height: 390px;
   object-fit: cover;
   object-position: center top;
 }
@@ -571,7 +571,7 @@ h3 {
 }
 
 .community-card-codex img {
-  height: 330px;
+  height: 390px;
 }
 
 .community-card-boundless img {
@@ -626,7 +626,7 @@ h3 {
 .community-proof img {
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 330px;
   object-fit: cover;
   object-position: center;
   border: 10px solid rgba(255, 255, 255, 0.62);
@@ -796,7 +796,7 @@ h3 {
   }
 
   .hero-panel img {
-    height: 360px;
+    height: 390px;
   }
 
   .metrics-band {
@@ -815,17 +815,17 @@ h3 {
   }
 
   .project-gallery {
-    min-height: 430px;
+    min-height: 480px;
   }
 
   .gallery-main {
     width: 100%;
-    height: 260px;
+    height: 300px;
   }
 
   .gallery-float {
-    width: 86%;
-    height: 245px;
+    width: 90%;
+    height: 270px;
     border-width: 7px;
   }
 
@@ -835,7 +835,7 @@ h3 {
   }
 
   .project-screen img {
-    max-height: 360px;
+    max-height: 430px;
     border-radius: 16px;
   }
 
@@ -854,7 +854,7 @@ h3 {
   .community-card img,
   .community-card-codex img,
   .community-proof img {
-    height: 290px;
+    height: 340px;
   }
 
   .contact-actions .button {
