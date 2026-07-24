@@ -414,8 +414,8 @@ h1 {
 
 .profile-strip-inner {
   display: grid;
-  grid-template-columns: 0.8fr 1.25fr 1fr 1.2fr;
-  gap: 28px;
+  grid-template-columns: 0.85fr 1.35fr 1fr;
+  gap: 40px;
   padding-block: 35px;
 }
 
