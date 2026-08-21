@@ -906,6 +906,23 @@ h1 {
   font-weight: 700;
 }
 
+.contact-links .booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  color: var(--blue);
+  background: var(--white);
+  text-decoration: none;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.contact-links .booking-link:hover {
+  background: #dce3ff;
+  transform: translateY(-2px);
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
