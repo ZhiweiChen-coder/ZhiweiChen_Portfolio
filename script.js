@@ -75,19 +75,28 @@ if (!reduceMotion && window.matchMedia("(pointer: fine)").matches) {
   });
 }
 
-if (menuButton) {
-  menuButton.addEventListener("click", () => {
-    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", String(!isOpen));
-    document.body.classList.toggle("nav-open", !isOpen);
-  });
-}
+const setMenu = (open) => {
+  if (!menuButton) return;
+  menuButton.setAttribute("aria-expanded", String(open));
+  menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  document.body.classList.toggle("nav-open", open);
+};
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    menuButton?.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("nav-open");
-  });
+menuButton?.addEventListener("click", () => {
+  setMenu(menuButton.getAttribute("aria-expanded") !== "true");
+});
+
+navLinks.forEach((link) => link.addEventListener("click", () => setMenu(false)));
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && document.body.classList.contains("nav-open")) {
+    setMenu(false);
+    menuButton?.focus();
+  }
+});
+
+window.matchMedia("(min-width: 761px)").addEventListener("change", (event) => {
+  if (event.matches) setMenu(false);
 });
 
 const observer = new IntersectionObserver(
