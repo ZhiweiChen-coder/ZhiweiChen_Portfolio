@@ -1289,7 +1289,10 @@ h1 {
   }
 
   .community-photo img {
+    height: auto;
     max-height: none;
+    aspect-ratio: 4 / 3;
+    object-position: center 35%;
   }
 
   .contact-inner {
