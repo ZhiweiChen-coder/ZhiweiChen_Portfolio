@@ -3,428 +3,219 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peter Chen | Official Website</title>
-    <meta
-      name="description"
-      content="The official website of Peter Chen, an AI product builder and community leader based in Brisbane."
-    >
-    <meta property="og:title" content="Peter Chen | Official Website">
-    <meta
-      property="og:description"
-      content="AI product builder working across agent systems, workflow automation, and builder communities."
-    >
+    <title>Peter Chen (Zhiwei Chen) | Research, Community &amp; Projects</title>
+    <meta name="description" content="Peter (Zhiwei) Chen is a Brisbane-based researcher studying how people use conversational AI responsibly and effectively. Explore his publications, community work, and projects.">
+    <meta property="og:title" content="Peter Chen (Zhiwei Chen) | Research, Community &amp; Projects">
+    <meta property="og:description" content="Research on responsible and effective use of conversational AI, community workshops in Brisbane, and selected projects.">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#f7f8f5">
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23111318'/%3E%3Ctext x='32' y='41' font-family='Helvetica,Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23fff'%3EPC%3C/text%3E%3C/svg%3E"
-    >
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/profile-avatar.png">
     <link rel="stylesheet" href="styles.css">
-    <noscript>
-      <style>
-        .reveal { opacity: 1; filter: none; transform: none; }
-      </style>
-    </noscript>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-    <header class="site-header" data-elevated="false">
-      <a class="brand" href="#top" aria-label="Peter Chen home">
-        <span class="brand-mark">PC</span>
-        <span class="brand-name">Peter Chen</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-                <span></span>
-        <span></span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#community">Community</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header">
+      <div class="section-shell header-inner">
+        <a class="brand" href="#top">
+          <img class="brand-avatar" src="assets/profile-avatar.png" alt="" width="36" height="36">
+          Peter Chen
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+          Menu <span aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section id="top" class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <p class="status"><span aria-hidden="true"></span> Brisbane, Australia</p>
-          <h1 id="hero-title">Peter Chen</h1>
-          <p class="hero-role">AI product builder and community leader.</p>
-          <p class="hero-lede">
-            I turn complex operational problems into clear AI products, from user research and
-            product strategy to agent workflows, APIs, and delivery.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="assets/zhiwei-chen-ai-product-portfolio.pdf">
-              Portfolio PDF <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+        <div class="hero-copy">
+          <h1 id="hero-title" tabindex="-1">Peter Chen</h1>
+          <p class="hero-identity">Zhiwei Chen <span aria-hidden="true">·</span> Researcher <span aria-hidden="true">·</span> <span class="hero-location">Brisbane, Australia</span></p>
+          <p class="hero-role">I study how people use conversational AI responsibly and effectively.</p>
+          <a class="button button-primary" href="#research">View research <span aria-hidden="true">↓</span></a>
+          <ul class="hero-profiles link-row" aria-label="Profiles">
+            <li><a class="text-link" href="https://scholar.google.com/citations?hl=en&amp;user=oYZU9mQAAAAJ">Google Scholar</a></li>
+            <li><a class="text-link" href="https://github.com/ZhiweiChen-coder">GitHub</a></li>
+            <li><a class="text-link" href="https://www.linkedin.com/in/peter-chen-984177266/">LinkedIn</a></li>
+          </ul>
         </div>
-
-        <figure class="hero-portrait reveal">
-          <img
-            src="assets/speaker-photo.png"
-            alt="Peter Chen speaking at GOBI 2025"
-            width="800"
-            height="1200"
-            fetchpriority="high"
-            data-parallax="0.04"
-          >
-          <figcaption>
-            <span>Speaking at GOBI 2025</span>
-            <span>AI · Product · Community</span>
-          </figcaption>
+        <figure class="hero-portrait" data-settle>
+          <img src="assets/speaker-portrait.webp" alt="Peter Chen holding a microphone on stage" width="800" height="1200" fetchpriority="high">
+          <figcaption>Speaking at GOBI 2025</figcaption>
         </figure>
       </section>
 
-      <section class="profile-strip" aria-label="Profile summary">
-        <div class="section-shell profile-strip-inner">
-          <p class="reveal">
-            <span>Focus</span>
-            AI products, agent systems, workflow automation
-          </p>
-          <p class="reveal">
-            <span>Education</span>
-            Master of Information Technology, University of Queensland
-          </p>
-          <p class="reveal">
-            <span>Community</span>
-            Codex Community Brisbane · Boundless Youth Forum
-          </p>
-        </div>
-      </section>
-
-      <section id="work" class="work section-shell" aria-labelledby="work-title">
-        <header class="section-heading reveal">
-          <p class="section-index">01 / Selected work</p>
-          <div>
-            <h2 id="work-title">AI products built around real operating work.</h2>
-            <p>Selected projects across enterprise analytics, investing, and product discovery.</p>
-          </div>
-        </header>
-
-        <article class="case-study case-study-feature reveal">
-          <div class="case-study-head">
-            <div>
-              <p class="project-number">Project 01</p>
-              <h3>Maintenance AI</h3>
-            </div>
-            <p class="project-summary">
-              An enterprise maintenance analytics platform that helps mining teams investigate
-              fleet health and turn operational data into useful answers.
-            </p>
-          </div>
-
-          <figure class="product-window" data-parallax="0.018" data-tilt>
-            <div class="window-bar" aria-hidden="true">
-              <span></span><span></span><span></span>
-              <p>Maintenance AI · Fleet overview</p>
-            </div>
-            <img
-              src="assets/bravus-dashboard.png"
-              alt="Maintenance AI dashboard showing fleet analytics and an assistant"
-              width="3420"
-              height="1894"
-              loading="lazy"
-            >
-          </figure>
-
-          <div class="case-study-details">
-            <div class="project-impact">
-              <p>Outcome</p>
-              <strong>20 min → 20 sec</strong>
-              <span>Maintenance information search time</span>
-            </div>
-            <div class="project-narrative">
-              <p>
-                I mapped pain points across maintenance, IT, and operations; designed agent actions
-                for downtime, event, SLA, and component analysis; and supported testing,
-                documentation, and report outputs.
-              </p>
-              <ul class="detail-list">
-                <li><span>Role</span> Product discovery, workflow design, technical delivery</li>
-                <li><span>System</span> RAG, SQL, tool calling, Azure, FastAPI, React</li>
-              </ul>
-              <a class="text-link" href="https://maintenance-rag-app.azurewebsites.net/docs">
-                Backend API documentation <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="case-study reveal">
-          <div class="case-study-head">
-            <div>
-              <p class="project-number">Project 02</p>
-              <h3>OpenAShare</h3>
-            </div>
-            <p class="project-summary">
-              A local-first AI research workspace for sharper A-share market decisions.
-            </p>
-          </div>
-
-          <figure class="product-window" data-parallax="0.018" data-tilt>
-            <div class="window-bar" aria-hidden="true">
-              <span></span><span></span><span></span>
-              <p>OpenAShare · Research workspace</p>
-            </div>
-            <img
-              src="assets/openashare-workspace.png"
-              alt="OpenAShare AI market workstation"
-              width="3414"
-              height="1902"
-              loading="lazy"
-            >
-          </figure>
-
-          <div class="case-study-details">
-            <div class="project-impact">
-              <p>Product scope</p>
-              <strong>One focused desk</strong>
-              <span>Market data, news, portfolio context, and agent research</span>
-            </div>
-            <div class="project-narrative">
-              <p>
-                I defined the product around the complete investor research workflow, connecting
-                market data, news, watchlists, portfolio analysis, and a research agent in one
-                self-hosted workspace.
-              </p>
-              <ul class="detail-list">
-                <li><span>Principle</span> Local-first, focused, decision-oriented</li>
-                <li><span>System</span> Next.js, Python, SQLite, agents, AkShare</li>
-              </ul>
-              <a class="text-link" href="https://github.com/ZhiweiChen-coder/OpenAshare">
-                View project on GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="case-study reveal">
-          <div class="case-study-head">
-            <div>
-              <p class="project-number">Project 03</p>
-              <h3>Auto</h3>
-            </div>
-            <p class="project-summary">
-              An AI tool directory that turns a plain-language goal into a useful recommendation.
-            </p>
-          </div>
-
-          <div class="product-window product-window-pair" data-parallax="0.018" data-tilt>
-            <figure>
-              <div class="window-bar" aria-hidden="true">
-                <span></span><span></span><span></span>
-                <p>Auto · Recommendation</p>
-              </div>
-              <img
-                src="assets/auto-home.png"
-                alt="Auto AI tool recommendation homepage"
-                width="3414"
-                height="1902"
-                loading="lazy"
-              >
-            </figure>
-            <figure>
-              <div class="window-bar" aria-hidden="true">
-                <span></span><span></span><span></span>
-                <p>Auto · Directory</p>
-              </div>
-              <img
-                src="assets/auto-directory.png"
-                alt="Auto AI tool directory cards"
-                width="3414"
-                height="1902"
-                loading="lazy"
-              >
-            </figure>
-          </div>
-
-          <div class="case-study-details">
-            <div class="project-impact">
-              <p>Experience</p>
-              <strong>Intent → tool</strong>
-              <span>Recommendation and structured comparison</span>
-            </div>
-            <div class="project-narrative">
-              <p>
-                I designed the experience around user goals, combining direct recommendations with
-                a browsable directory and clear information about category, deployment, and price.
-              </p>
-              <ul class="detail-list">
-                <li><span>Focus</span> Recommendation UX, search, directory</li>
-                <li><span>Design</span> Clear hierarchy, comparison, quick decisions</li>
-              </ul>
-              <a class="text-link" href="https://github.com/ZhiweiChen-coder/Auto">
-                View project on GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="about" class="about" aria-labelledby="about-title">
-        <div class="section-shell">
-          <header class="section-heading reveal">
-            <p class="section-index">02 / About</p>
-            <div>
-              <h2 id="about-title">Product thinking with enough technical depth to ship.</h2>
-            </div>
-          </header>
-          <div class="about-layout">
-            <p class="about-lede reveal">
-              My work sits between the user, the product, and the system.
-            </p>
-            <div class="about-copy reveal">
-              <p>
-                I start with the decision someone needs to make and the workflow around it. From
-                there, I translate research into requirements, design usable agent interactions,
-                and collaborate closely on APIs, retrieval, tool calling, and testable outputs.
-              </p>
-              <p>
-                Alongside product work, I build communities that keep me close to founders,
-                developers, and emerging technology. That feedback loop helps me see what people
-                actually adopt, not only what is technically possible.
-              </p>
-            </div>
-          </div>
-          <ol class="principles" aria-label="Product principles">
-            <li class="reveal"><span>01</span><strong>Start with the user task.</strong><p>Find the real job, painful handoff, and decision.</p></li>
-            <li class="reveal"><span>02</span><strong>Design the workflow.</strong><p>Shape tools, data access, and UI as one system.</p></li>
-            <li class="reveal"><span>03</span><strong>Make outputs testable.</strong><p>Build for clarity, trust, and practical delivery.</p></li>
-            <li class="reveal"><span>04</span><strong>Stay close to builders.</strong><p>Use community as an ongoing source of signal.</p></li>
-          </ol>
+      <section id="research" class="research" aria-labelledby="research-title">
+        <div class="section-shell research-layout">
+          <h2 class="section-title" id="research-title" tabindex="-1">Research</h2>
+          <ul class="publications" role="list">
+            <li>
+              <article class="publication">
+                <div class="publication-copy">
+                  <h3>Exploring Use of Conversational AI to Investigate Maintenance Problems: Insights from an Early Deployment in a Mining Organisation</h3>
+                  <p>Zhiwei Chen and Dhaval Vyas <span aria-hidden="true">·</span> OzCHI 2026</p>
+                  <ul class="link-row" aria-label="Links for the conversational AI study">
+                    <li><a class="text-link" href="https://doi.org/10.1145/3847401.3857164" aria-label="Paper: Conversational AI in mining maintenance">Paper <span aria-hidden="true">↗</span></a></li>
+                    <li><a class="text-link" href="#maintenance-ai">Related project <span aria-hidden="true">↓</span></a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="publication">
+                <div class="publication-copy">
+                  <h3>Shaping a Polycentric Metropolis: A Case Study of the Intra-city Polycentricity of the Yangtze River Delta</h3>
+                  <p>Zhiwei Chen <span aria-hidden="true">·</span> Journal of Economics, Finance and Accounting Studies <span aria-hidden="true">·</span> 2022</p>
+                  <a class="text-link" href="https://doi.org/10.32996/jefas.2022.4.4.7" aria-label="Paper: Shaping a Polycentric Metropolis">Paper <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section id="community" class="community section-shell" aria-labelledby="community-title">
-        <header class="section-heading reveal">
-          <p class="section-index">03 / Community</p>
-          <div>
-            <h2 id="community-title">Building spaces where ambitious people learn together.</h2>
+        <h2 class="section-title" id="community-title" tabindex="-1">Community</h2>
+        <article class="codex-story">
+          <div class="story-copy">
+            <h3>Codex Community Brisbane</h3>
+            <p>I help lead Brisbane’s Codex community, hosting hands-on workshops, build nights, and demos.</p>
+            <a class="text-link" href="https://developers.openai.com/community">OpenAI Developer Community <span aria-hidden="true">↗</span></a>
           </div>
-        </header>
-
-        <article class="community-story community-story-codex reveal">
-          <figure class="meetup-gallery">
-            <img
-              class="meetup-group-photo"
-              src="assets/codex-brisbane-group.png"
-              alt="Codex Community Brisbane members at a local meetup"
-              width="2048"
-              height="1369"
-              loading="lazy"
-            >
-            <img
-              class="meetup-demo-photo"
-              src="assets/codex-brisbane-demo.png"
-              alt="Peter Chen presenting a live project demo at a Codex Community Brisbane meetup"
-              width="2048"
-              height="1369"
-              loading="lazy"
-            >
-            <figcaption>Codex Community Brisbane · Build night and live project demo</figcaption>
+          <figure class="workshop-figure" data-settle>
+            <div class="workshop-gallery">
+              <img
+                src="assets/codex-workshop-group.webp"
+                srcset="assets/codex-workshop-group-small.webp 768w, assets/codex-workshop-group.webp 1440w"
+                sizes="(min-width: 1296px) 740px, (min-width: 761px) 58vw, calc(100vw - 32px)"
+                alt="Codex Community Brisbane workshop participants gathered for a group photo"
+                width="1440" height="961" loading="lazy" decoding="async"
+              >
+              <img
+                src="assets/codex-workshop-demo.webp"
+                srcset="assets/codex-workshop-demo-small.webp 640w, assets/codex-workshop-demo.webp 1040w"
+                sizes="(min-width: 1296px) 480px, (min-width: 761px) 38vw, calc(100vw - 32px)"
+                alt="Peter presenting a Recipe Finder mini-project during a Codex workshop"
+                width="1040" height="694" loading="lazy" decoding="async"
+              >
+            </div>
+            <figcaption>A Brisbane Codex workshop and live project demo.</figcaption>
           </figure>
-          <div class="community-copy">
-            <p class="project-number">Codex Community Brisbane</p>
-            <h3>I help lead Brisbane’s Codex community.</h3>
-            <p>
-              I host programming for developers, founders, students, and AI builders, including
-              build nights, practical talks, workshops, and demo sessions.
-            </p>
-            <ul class="inline-facts" aria-label="Codex Community Brisbane highlights">
-              <li>Brisbane</li>
-              <li>AI coding agents</li>
-              <li>Build nights</li>
-            </ul>
-          </div>
         </article>
-
-        <article class="community-story community-story-reverse reveal">
-          <figure class="boundless-gallery" data-parallax="0.014">
-            <img
-              class="boundless-event-photo"
-              src="assets/community-bitget-event.png"
-              alt="Boundless Youth Forum event audience"
-              width="2048"
-              height="1366"
-              loading="lazy"
-            >
-            <img
-              class="boundless-gathering-photo"
-              src="assets/boundless-youth-gathering.jpg"
-              alt="Boundless Youth Forum members gathered at an innovation community event"
-              width="4096"
-              height="3072"
-              loading="lazy"
-            >
-            <figcaption>Boundless Youth Forum · Global innovation community gathering</figcaption>
-          </figure>
-          <div class="community-copy">
-            <p class="project-number">Boundless Youth Forum</p>
-            <h3>I founded a global youth innovation platform.</h3>
-            <p>
-              Boundless Youth Forum connects emerging leaders through advisory, events, and
-              community across careers, research, entrepreneurship, and startups.
-            </p>
-            <ul class="inline-facts" aria-label="Boundless Youth Forum statistics">
-              <li>10+ events</li>
-              <li>1,000+ attendees</li>
-              <li>20+ partners</li>
-            </ul>
-            <a class="text-link" href="https://boundlessyouths.com">
-              Visit Boundless Youth Forum <span aria-hidden="true">↗</span>
-            </a>
+        <article class="boundless-story">
+          <div class="story-copy">
+            <h3>Boundless Youth Forum</h3>
+            <p>I founded a global youth innovation community connecting emerging leaders across research, careers, and entrepreneurship.</p>
+            <a class="text-link" href="https://boundlessyouths.com">Visit Boundless Youth Forum <span aria-hidden="true">↗</span></a>
           </div>
-        </article>
-
-        <figure class="community-photo reveal">
           <img
-            src="assets/startmate-photo.png"
-            alt="Peter Chen at Startmate"
-            width="1280"
-            height="1706"
-            loading="lazy"
+            src="assets/boundless-community.webp"
+            alt="Boundless Youth Forum members gathered at an innovation event"
+            width="960" height="720" loading="lazy" decoding="async" data-settle
           >
-          <figcaption>Connecting with founders and builders at Startmate.</figcaption>
-        </figure>
+        </article>
+      </section>
+
+      <section id="work" class="work" aria-labelledby="work-title">
+        <div class="section-shell">
+          <h2 class="section-title" id="work-title" tabindex="-1">Selected projects</h2>
+          <div class="project-grid">
+            <article class="project" id="maintenance-ai" aria-labelledby="maintenance-title">
+              <h3 id="maintenance-title" tabindex="-1">Maintenance AI</h3>
+              <p>A conversational analytics tool that helps mining teams investigate fleet maintenance problems.</p>
+              <div class="project-media">
+                <video
+                  width="1280" height="720" controls playsinline preload="none"
+                  poster="assets/maintenance-ai-demo-poster.webp" aria-label="Maintenance AI demo"
+                  aria-describedby="maintenance-demo-description"
+                >
+                  <source src="assets/maintenance-ai-demo.mp4" type="video/mp4">
+                </video>
+                <p id="maintenance-demo-description" hidden>A silent demo of a fleet maintenance workspace. The assistant compares day- and night-shift issues. Filtering for hydraulic events opens results in tables and charts, with a monthly trend and heatmap in the analytics view.</p>
+              </div>
+              <p>I helped design and test workflows for investigating downtime, maintenance events, and component issues.</p>
+              <p class="project-stack"><strong>Stack</strong> React · FastAPI · Azure OpenAI · Azure SQL</p>
+            </article>
+
+            <article class="project" aria-labelledby="openashare-title">
+              <h3 id="openashare-title">OpenAshare</h3>
+              <p>An open-source AI workspace for asking questions about markets and checking the evidence behind the answers.</p>
+              <div class="project-media">
+                <video
+                  width="1280" height="720" controls playsinline preload="none"
+                  poster="assets/openashare-demo-poster.webp" aria-label="OpenAshare product demo"
+                  aria-describedby="openashare-demo-description"
+                >
+                  <source src="assets/openashare-demo.mp4" type="video/mp4">
+                  <track kind="captions" src="assets/openashare-demo.en.vtt" srclang="en" label="English">
+                </video>
+                <p id="openashare-demo-description" hidden>The demo asks what drove Micron’s share price. A price chart and market figures appear, followed by an answer with sources and suggested follow-up questions.</p>
+              </div>
+              <p class="project-stack"><strong>Stack</strong> Next.js · FastAPI · PydanticAI · SQLite · AkShare</p>
+              <ul class="link-row" aria-label="OpenAshare links">
+                <li><a class="text-link" href="https://openashare.com/">Visit OpenAshare <span aria-hidden="true">↗</span></a></li>
+                <li><a class="text-link" href="https://github.com/ZhiweiChen-coder/OpenAshare">OpenAshare on GitHub <span aria-hidden="true">↗</span></a></li>
+              </ul>
+            </article>
+
+            <article class="project project-feature" id="brisbane-go" aria-labelledby="brisbane-go-title">
+              <div>
+                <h3 id="brisbane-go-title">Brisbane Go</h3>
+                <p>A low-poly browser game where you explore a Brisbane-inspired riverfront park and record wildlife discoveries in a field journal.</p>
+                <p class="project-stack"><strong>Stack</strong> JavaScript · Three.js · WebGL · Vite</p>
+                <a class="text-link" href="https://www.brisbanego.online/">Play Brisbane Go <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="project-media">
+                <video
+                  width="1280" height="720" controls playsinline preload="none"
+                  poster="assets/brisbane-go-trailer-poster.webp" aria-label="Brisbane Go gameplay trailer"
+                  aria-describedby="brisbane-go-trailer-description"
+                >
+                  <source src="assets/brisbane-go-trailer.mp4" type="video/mp4">
+                  <track kind="captions" src="assets/brisbane-go-trailer.en.vtt" srclang="en" label="English">
+                </video>
+                <p id="brisbane-go-trailer-description" hidden>Mara explores a low-poly park by the Brisbane River and follows an ibis over fallen logs. She uses the field lens to photograph an Australian white ibis and records the discovery in her wildlife journal. The trailer ends with the address brisbanego.online.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title" tabindex="-1">About</h2>
+        <p>Hi, I’m Peter. I research how people can interact effectively with AI, and I build AI systems that solve real operational problems. I also lead tech community events and developer groups.</p>
       </section>
 
       <section id="contact" class="contact" aria-labelledby="contact-title">
-        <div class="section-shell contact-inner reveal">
-          <p class="section-index">04 / Contact</p>
+        <div class="section-shell contact-inner">
           <div>
-            <h2 id="contact-title">Let’s build something useful.</h2>
-            <p>
-              I’m open to conversations about AI product, agent workflows, and startup ecosystems.
-            </p>
+            <h2 class="section-title" id="contact-title" tabindex="-1">Get in touch</h2>
+            <p>For research collaborations, talks, and workshops.</p>
           </div>
-          <div class="contact-links">
-            <a
-              class="booking-link"
-              href="https://calendly.com/peterdchan2017"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a chat with me <span aria-hidden="true">↗</span>
-            </a>
-            <a href="mailto:peterdchan2017@gmail.com">Email <span aria-hidden="true">↗</span></a>
-            <a href="https://www.linkedin.com/in/zhiwei-chen-984177266" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="tel:+61434259217">+61 434 259 217</a>
-          </div>
+          <ul class="link-row contact-links" aria-label="Contact options">
+            <li><a class="button" href="https://calendly.com/peterdchan2017">Book a chat <span aria-hidden="true">↗</span></a></li>
+            <li><a class="text-link" href="mailto:peterdchan2017@gmail.com">Email</a></li>
+            <li><a class="text-link" href="https://www.linkedin.com/in/peter-chen-984177266/">LinkedIn</a></li>
+            <li><a class="text-link" href="tel:+61434259217">+61 434 259 217</a></li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer section-shell">
-      <p>© 2026 Peter Chen. Official website.</p>
-      <a href="#top">Back to top ↑</a>
+      <p>© 2026 Peter Chen</p>
+      <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
